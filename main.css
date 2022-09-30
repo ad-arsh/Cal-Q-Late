@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.calc {
+    margin: auto;
+    background-color: #061116;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: kalam;
+    box-shadow: 0px 0px 20px #061116;
+}
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 5px;
+}
+
+input {
+    font-size: 20px;
+    padding: 5px 0px;
+    width: 185px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: white;
+    text-align: right;
+    font-family: kalam;
+    text-transform: uppercase;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+    background-color: azure;
+    transform: rotate(-25deg);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+    background-color: azure;
+    transition: 0.5s;
+}
+
+.btn2:hover {
+    transform: rotate(15deg);
+    cursor: pointer;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.white:hover {
+    background-color: rgb(113, 203, 228);
+    color: black;
+}
+
+.brown {
+    background-color: #1b2f33;
+    color: white;
+}
+
+.brown:hover {
+    background-color: blue;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.red:hover {
+    background-color: orange;
+    color: white;
+}

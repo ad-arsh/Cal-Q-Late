@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    h1{
+      text-align: center;
+      margin-top: 0.67em;
+      margin-bottom: 0.67em;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      margin: auto;
+      width: fit-content;
+      padding: 10px;
+      border: 1px solid #f2f2f2;
+      -webkit-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+         -moz-box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+              box-shadow: 1px 1px 4px 0px rgba(176,176,176,1);
+      background-color: #fff;
+      height: 450px;
+      background-color: #F8F8F8;
+    }
+    .header{
+      background-color: #8c86e3;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+    .result{
+        margin: 5px 0px;
+      font-size: 24px;
+      padding: 24px 5px;
+      font-weight: 700;
+      border-radius: 5px;
+      text-align: right;
+      width: 96%;
+      border: none;
+      background-color: #F8F8F8;
+      -webkit-box-shadow: inset 1px 1px 4px 0px rgba(176,176,176,1);
+         -moz-box-shadow: inset 1px 1px 4px 0px rgba(176,176,176,1);
+              box-shadow: inset 1px 1px 4px 0px rgba(176,176,176,1);
+    }
+    .first-row,
+    .second-row,
+    .third-row,
+    .fourth-row,
+    .conflict
+    {
+     background-color: red;
+     display: block;
+    }
+    .global{
+     padding: 15px;
+     font-weight: bold;
+     font-size: 16px;
+     border: none;
+     border-radius: 3px;
+     background-color: #F2F2F2;
+     float: left;
+     width: 45px;
+     margin: 0 2px;
+     /*border: 1px solid #000;*/
+    }
+    .conflict .left,
+    .conflict .right{
+      float: left;
+      position: relative;
+    }
+    .left{
+      width: 74%;
+    }
+    .right{
+      width: 24%;
+    }
+    .big{
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      background-color: #F2F2F2;
+      float: left;
+      width: 64.5%;
+      margin: 0 2px;
+    }
+    .small{
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      background-color: #F2F2F2;
+      float: left;
+      width: 31.5%;
+      margin: 0 2px;
+    }
+    .plus{
+      height: 105px;
+      width: 100%;
+    }
+    .green{
+      background-color: #81C784;
+    }
+    .red{
+      background-color: #F50258
+    }
+    .grey{
+      background-color: #F2F2F2;
+    }
+    .white-text{
+      color: #fff;
+    }
+    .top-margin{
+      margin-top: 4px;
+    }
+
+  </style>
+</head>
+<body bgcolor="#111827">
+
+  <h1 style="color:#fff;">Calculator Design Using HTML Layout</h1>
+  <div class="container">
+    <div class="header">Calculator</div>
+    <input type="text" class="result">
+    <div class="first-row">
+      <input type="button" name="" value="&radic;" class="global">
+      <input type="button" name="" value="(" class="global">
+      <input type="button" name="" value=")" class="global">
+      <input type="button" name="" value="%" class="global">
+    
+    <div class="conflict">
+      <div class="left">
+        <input type="button" name="" value="0" class=" big">
+        <input type="button" name="" value="." class=" small">
+        <input type="button" name="" value="Del" class=" red small white-text top-margin">
+        <input type="button" name="" value="=" class=" green white-text big top-margin">
+      </div>
+      <div class="right">
+        <input type="button" name="" value="+" class="global grey plus">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 300px;
+            padding: 10px;
+            -webkit-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+            -moz-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+            box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+            background-color: #fff;
+            border-radius: 10px;
+            height: auto;
+            background-color: rgb(12, 8, 8);
+            padding-bottom: 20px;
+        }
+/* 
+        .header {
+            background-color: #8c86e3;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        } */
+
+        .result {
+            outline: none;
+            margin: 5px 0px;
+            font-size: 24px;
+            padding: 24px 5px;
+            font-weight: 700;
+            border-radius: 5px;
+            text-align: right;
+            width: 215px;
+            color: white;
+            border: none;
+            background-color: #F8F8F8;
+            /* -webkit-box-shadow: inset 3px 3px 12px rgba(176, 176, 176, 1), inset -3px -3px 12px rgb(255, 254, 254);
+            -moz-box-shadow: inset 3px 3px 12px rgba(176, 176, 176, 1), inset -3px -3px 12px rgb(255, 255, 255);
+            box-shadow: inset 3px 3px 12px rgba(176, 176, 176, 1), inset -3px -3px 12px rgb(255, 255, 255); */
+        }
+
+        .result {
+            background-color: rgb(12, 8, 8);
+        }
+
+        .first-row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            display: flex;
+            width: 45px;
+            height: 45px;
+            border-radius: 300px;
+            justify-content: center;
+            align-items: center;
+            background-color: darkslategray;
+            color: white;
+            font-size: 20px;
+            margin: 4px;
+            /* -webkit-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+            -moz-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+            box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1); */
+        }
+
+        .white {
+            background-color: white;
+            color: black;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header">
+            Cal-Q-Late
+        </div> -->
+        <input type="text" class="result">
+        <div class="first-row">
+            <div class="btn white">%</div>
+            <div class="btn white">^</div>
+            <div class="btn red">CE</div>
+            <div class="btn red">C</div>
+        </div>
+        <div class="first-row">
+            <div class="btn">7</div>
+            <div class="btn">8</div>
+            <div class="btn">9</div>
+            <div class="btn white">-</div>
+        </div>
+        <div class="first-row">
+            <div class="btn">4</div>
+            <div class="btn">5</div>
+            <div class="btn">6</div>
+            <div class="btn white">/</div>
+        </div>
+        <div class="first-row">
+            <div class="btn">1</div>
+            <div class="btn">2</div>
+            <div class="btn">3</div>
+            <div class="btn white">*</div>
+        </div>
+        <div class="first-row">
+            <div class="btn">.</div>
+            <div class="btn">0</div>
+            <div class="btn white">=</div>
+            <div class="btn white">+</div>
+        </div>
+    </div>
+</body>
+
+</html>
